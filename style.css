@@ -18,7 +18,6 @@ body {
   transition: all ease 0.3s;
   transform: scale(1.05);
 }
-
 button:hover {
   cursor: pointer;
   transition: all ease 0.2s;
@@ -62,7 +61,6 @@ input:hover {
 .navDiv {
   display: flex;
   padding-bottom: 10px;
-  /* background-color: rebeccapurple; */
 }
 .navItems {
   display: flex;
@@ -223,49 +221,59 @@ option {
   align-items: center;
   justify-content: center;
   width: 100%;
+  /* border: 2px solid red; */
 }
-.faqQue {
+.faqQue,
+.faqQue2,
+.faqQue3,
+.faqQue4,
+.faqQue5,
+.faqQue6 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   /* uncomment upper coode after adding "svg" */
+  /* border: 2px solid red; */
+  width: 80%;
   align-items: center;
   background-color: #2d2d2d;
   color: white;
   padding: 20px;
   max-width: 80%;
   cursor: pointer;
+  text-align: left;
 }
 
-.faqQue:hover {
+.faqQue:hover,
+.faqQue2:hover,
+.faqQue3:hover,
+.faqQue4:hover,
+.faqQue5:hover,
+.faqQue6:hover {
   background-color: #454545;
   transition: all ease 0.5s;
 }
-
-.extendedFaq {
+.extendedFaq,
+.extendedFaq2,
+.extendedFaq3,
+.extendedFaq4,
+.extendedFaq5,
+.extendedFaq6 {
   gap: 0;
   margin-top: -9px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  /*flex-direction: row; */
+  /* justify-content: space-between;*/
   /* uncomment upper coode after adding "svg" */
-  align-items: center;
+  align-items: left;
   background-color: #2d2d2d;
   color: white;
   padding: 20px;
-  max-width: 60vw;
-  width: 65%;
+  width: 80%;
+  font-size: 13px;
   display: none;
+  transition: all 0.25s;
 }
-/* .faqQue:hover{
-  background-color: red;
-  p{
-    color: red;
-  }
-  .extendedFaq > p{
-    background-color: #dc030f;
-  }
-} */
 .memmbershipContainer {
   padding-top: 50px;
   display: flex;
@@ -274,6 +282,7 @@ option {
   justify-content: center;
   gap: 10px;
   padding-bottom: 20px;
+  text-align: center;
 }
 .inputTagMem {
   margin-top: 5px;
@@ -317,19 +326,34 @@ a {
   color: #80807e;
   font-size: 1.3rem;
 }
-h2 {
-  text-align: center;
-  padding-left: 30px;
-}
 .social {
-  padding: 0px 9px 0px 25px;
   filter: invert();
-  height: 30px;
+  height: 50px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 15px;
-  margin-bottom: 15px;
 }
-
+.social img {
+  height: 30px;
+  align-items: center;
+  overflow: hidden;
+}
+.social img:hover {
+  transition: all ease-in 0.2s;
+  transform: scale(1.1);
+}
+hr {
+  width: 80%;
+  margin: auto;
+}
+.copyrightDiv {
+  margin: 5px 0px;
+  display: flex;
+  justify-content: center;
+  color: #80807e;
+  margin-bottom: 10px;
+}
 @media screen and (max-width: 980px) {
   .scondSection {
     display: flex;
@@ -406,16 +430,12 @@ h2 {
     min-width: 250px;
     padding-bottom: 20px;
   }
-
   .rightVid {
     top: 34px;
     right: 35px;
   }
-
   .rightVidSaif {
     top: 11px;
     right: 47px;
   }
 }
-
-
